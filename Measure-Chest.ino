@@ -40,6 +40,10 @@ void loop() {
   sensors_event_t event; 
   gyro.getEvent(&event);
  
+  if (!tmrpcm.isPlaying()) {
+    tmrpcm.play("opening4.wav");
+  }
+  
   if (checkRotationalThreshold(rotationalThreshold, event.gyro.z)) {
     //The event.gyro.z is the rotational speed of the gyro at this moment in Radians per second
     //In order to ROUGHLY calculate the angle change during this time frame, we divide by our measurementsPerSecond then multiply by 57.2958 (an approximation of degrees per radian)
@@ -47,7 +51,7 @@ void loop() {
     angle += event.gyro.z / measurementsPerSecond * 57.2958;
   }
 
-  if (angle > 100 && !tmrpcm.isPlaying()) {
+  if (angle > 100) {
     tmrpcm.play("opened3.wav");
   }
   
