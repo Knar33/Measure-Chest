@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="opened_data" version="1.3.0" audacityversion="2.1.0" sel0="2.0221988750" sel1="2.0221988750" vpos="0" h="0.0000000000" zoom="350.1139322917" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags>
+		<tag name="ORIGINAL-LANGUAGE-TITLE" value="アイテムキャッチファンファーレ"/>
+		<tag name="GENRE" value="Soundtrack"/>
+		<tag name="ARTIST" value="Koji Kondo"/>
+		<tag name="RIPPER" value="BoneSatyr"/>
+		<tag name="ARRANGER" value="Kouji Kondou (近藤浩治)"/>
+		<tag name="REPLAYGAIN_TRACK_PEAK" value="0.57223511"/>
+		<tag name="TRACKNUMBER" value="8"/>
+		<tag name="Part of a set" value="0"/>
+		<tag name="SUPPLIER" value="BoneSatyr"/>
+		<tag name="Composer" value="Kouji Kondou (近藤浩治)"/>
+		<tag name="ALBUMARTIST2" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="TITLE" value="Item Catch"/>
+		<tag name="YEAR" value="1998"/>
+		<tag name="REPLAYGAIN_TRACK_GAIN" value="+0.03 dB"/>
+		<tag name="ORIGINAL-LANGUAGE-ALBUM" value="ゼルダの伝説　時のオカリナ オリジナルサウンドトラック"/>
+		<tag name="Band" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="CATALOGUENUMBER" value="PCCG-00475"/>
+		<tag name="ORIGINAL-LANGUAGE-ARTIST" value="近藤浩治"/>
+		<tag name="REPLAYGAIN_ALBUM_GAIN" value="-1.60 dB"/>
+		<tag name="Software" value="Lavf57.56.100"/>
+		<tag name="REPLAYGAIN_ALBUM_PEAK" value="1.00000000"/>
+		<tag name="ALBUM" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="TRACKNUM" value="8"/>
+	</tags>
+	<wavetrack name="opened" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="97618">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000234.au" len="97618" min="-1.0" max="0.938903" rms="0.188457"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
