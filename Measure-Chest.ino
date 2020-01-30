@@ -12,6 +12,8 @@ Adafruit_L3GD20_Unified gyro = Adafruit_L3GD20_Unified(20);
 float angle;
 float measurementsPerSecond = 10;
 float rotationalThreshold = .05;
+bool opened = false;
+bool opening = false;
 TMRpcm tmrpcm;
 
 void setup() {
@@ -39,10 +41,6 @@ void setup() {
 void loop() {
     sensors_event_t event; 
     gyro.getEvent(&event);
-   
-    if (!tmrpcm.isPlaying()) {
-      tmrpcm.play("opening5.wav");
-    }
     
     if (checkRotationalThreshold(rotationalThreshold, event.gyro.z)) {
       //The event.gyro.z is the rotational speed of the gyro at this moment in Radians per second
@@ -50,9 +48,26 @@ void loop() {
       //This will result in drift over time, but the angle will be reset everytime the box is closed.
       angle += event.gyro.z / measurementsPerSecond * 57.2958;
     }
+    
+    if (angle < 5 && opening) {
+      angle = 0;
+      opening = false;
+      opened = false;
+      tmrpcm.stopPlayback(); 
+    }
+    if (angle > 5 && !opening) {
+      opening = true;
+      tmrpcm.play("opening5.wav");
+    }
   
-    if (angle > 100) {
+    if (angle > 100 && !opened) {
+      opened = true;
       tmrpcm.play("opened3.wav");
+    }
+
+    if (opened && !tmrpcm.isPlaying()) {
+      tmrpcm.disable();
+      tmrpcm.stopPlayback(); 
     }
     
     Serial.print("Z-Rotation: "); Serial.print(event.gyro.z); Serial.print("; Angle: "); Serial.println(angle);
