@@ -13,6 +13,7 @@ I only care about the Z axis rotation, because that's the direction it will pivo
 I have a "rotationalThreshold" variable, which is the minimum gyro.z value I consider to be moving (I have it set to 0.05). If the gyro reads between -0.05 and 0.05, it will not do any angle calculations. This is to avoid excess drift and noise.
 
 Audacity
+https://learn.adafruit.com/adafruit-wave-shield-audio-shield-for-arduino/check-your-files
 https://www.instructables.com/id/Audio-Player-Using-Arduino-With-Micro-SD-Card/
 
 Logic
