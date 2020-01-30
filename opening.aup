@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="opening_data" version="1.3.0" audacityversion="2.1.0" sel0="42.8818743898" sel1="42.8818743898" vpos="0" h="38.1950667100" zoom="41.3927801724" rate="16000.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags>
+		<tag name="ORIGINAL-LANGUAGE-TITLE" value="宝箱"/>
+		<tag name="GENRE" value="Soundtrack"/>
+		<tag name="ARTIST" value="Koji Kondo"/>
+		<tag name="RIPPER" value="BoneSatyr"/>
+		<tag name="ARRANGER" value="Kouji Kondou (近藤浩治)"/>
+		<tag name="REPLAYGAIN_TRACK_PEAK" value="0.52798462"/>
+		<tag name="TRACKNUMBER" value="7"/>
+		<tag name="Part of a set" value="0"/>
+		<tag name="SUPPLIER" value="BoneSatyr"/>
+		<tag name="Composer" value="Kouji Kondou (近藤浩治)"/>
+		<tag name="ALBUMARTIST2" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="TITLE" value="Open Treasure Box"/>
+		<tag name="YEAR" value="1998"/>
+		<tag name="REPLAYGAIN_TRACK_GAIN" value="+1.41 dB"/>
+		<tag name="ORIGINAL-LANGUAGE-ALBUM" value="ゼルダの伝説　時のオカリナ オリジナルサウンドトラック"/>
+		<tag name="Band" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="CATALOGUENUMBER" value="PCCG-00475"/>
+		<tag name="ORIGINAL-LANGUAGE-ARTIST" value="近藤浩治"/>
+		<tag name="REPLAYGAIN_ALBUM_GAIN" value="-1.60 dB"/>
+		<tag name="Software" value="Lavf57.56.100"/>
+		<tag name="REPLAYGAIN_ALBUM_PEAK" value="1.00000000"/>
+		<tag name="ALBUM" value="The Legend Of Zelda Ocarina Of Time Original Sound Track"/>
+		<tag name="TRACKNUM" value="7"/>
+	</tags>
+	<wavetrack name="opening" channel="2" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="0" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3095683">
+				<waveblock start="0">
+					<simpleblockfile filename="e000026b.au" len="262144" min="-0.969689" max="0.992641" rms="0.197566"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e00001e6.au" len="262144" min="-0.958434" max="0.993395" rms="0.252281"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0000f80.au" len="262144" min="-0.951202" max="0.997294" rms="0.248982"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e00004a3.au" len="262144" min="-0.949819" max="0.979939" rms="0.250247"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e0000d3a.au" len="262144" min="-0.951957" max="0.976355" rms="0.248656"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e0000df8.au" len="262144" min="-0.940701" max="0.982077" rms="0.251311"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e0000cbc.au" len="262144" min="-0.934036" max="0.961263" rms="0.247904"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e00003e0.au" len="262144" min="-0.904041" max="0.912782" rms="0.241969"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e00008d7.au" len="262144" min="-0.86166" max="0.862917" rms="0.231481"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e00004ad.au" len="262144" min="-0.82871" max="0.83569" rms="0.228293"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e0000b5d.au" len="262144" min="-0.833866" max="0.836256" rms="0.225829"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e0000181.au" len="212099" min="-0.85556" max="0.845248" rms="0.205285"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
