@@ -42,11 +42,11 @@ void loop() {
     sensors_event_t event; 
     gyro.getEvent(&event);
     
-    if (checkRotationalThreshold(rotationalThreshold, event.gyro.z)) {
-      //The event.gyro.z is the rotational speed of the gyro at this moment in Radians per second
+    if (checkRotationalThreshold(rotationalThreshold, event.gyro.x)) {
+      //The event.gyro.x is the rotational speed of the gyro at this moment in Radians per second
       //In order to ROUGHLY calculate the angle change during this time frame, we divide by our measurementsPerSecond then multiply by 57.2958 (an approximation of degrees per radian)
       //This will result in drift over time, but the angle will be reset everytime the box is closed.
-      angle += event.gyro.z / measurementsPerSecond * 57.2958;
+      angle += event.gyro.x / measurementsPerSecond * 57.2958;
     }
     
     if (angle < 5 && opening) {
@@ -70,7 +70,6 @@ void loop() {
       tmrpcm.stopPlayback(); 
     }
     
-    Serial.print("Z-Rotation: "); Serial.print(event.gyro.z); Serial.print("; Angle: "); Serial.println(angle);
     delay(1000 / measurementsPerSecond);
 }
 
